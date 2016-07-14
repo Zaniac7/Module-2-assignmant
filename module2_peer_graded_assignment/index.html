@@ -1,0 +1,132 @@
+<!-- You must implement the following breakpoints that will be considered desktop, tablet, and mobile. The browser should display a desktop version of the site when the width of the browser window is 992px and above. Tablet view should appear only if the width of the browser window is between 768px and 991px, inclusively. Mobile view should appear only if the width of the browser is equal to or less than 767px.!-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module_2_assignment</title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	/**********BaseStyles***********/
+
+	.section{
+		border:5px solid blue;
+		background-color: grey;
+		padding:10px;
+		margin:5px;
+		width:31%;
+		float:left;
+	}
+
+	#lorem{
+		float: right;
+		top:0;
+		border: 5px solid red;
+		margin:-10px;
+		padding: 3px;
+		background-color: white;
+	}
+	#lorem2{
+		float: right;
+		top:0;
+		border: 5px solid white;
+		margin:-10px;
+		padding: 3px;
+		background-color: red;
+	}
+	#lorem3{
+		float: right;
+		top:0;
+		border: 5px solid brown;
+		margin:-10px;
+		padding: 3px;
+		background-color: purple;
+		color:white;
+	}
+		.lg{
+
+		}
+
+		.sml{
+
+		}
+
+		.med{
+
+		}
+	/*Desktop device*/
+	@media(min-width: 992px){
+		#sec1{
+			width:31%;
+		}
+		#sec2{
+			width:31%;
+			float: left;
+		}
+		#sec3{
+			width:31%;
+			float: left;
+		}
+
+	}
+
+
+	/*tablet devices*/
+	@media(min-width: 768px) and (max-width: 991px){
+		#sec1{
+			width:45%;
+			float: left;
+		}
+		#sec2{
+			width:45%;
+			float:right;
+		}
+		#sec3{
+			width:100%;
+			float:bottom;
+		}
+	}
+
+	/*mobile devices*/
+	@media(max-width: 767px){
+		#sec1{
+			width: 100%;
+			
+		
+		}
+		#sec2{
+			width:100%;
+			
+		}
+		#sec3{
+			width: 100%
+			
+		}
+		}
+	
+
+	
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<h1 id="title" align="center">Our Menu</h1>
+<div class="section lg sml med" id="sec1">
+<p id="lorem" >Spider Eye Stew</p>
+<p class="lorem">				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit quis magna quis dictum. Morbi et euismod est, sit amet placerat nulla. Praesent scelerisque metus eu turpis lacinia tempor. Aenean in vulputate orci. Donec ipsum orci, congue a fringilla at, blandit non eros. Vestibulum ac nunc suscipit, mattis sem ut, auctor erat. Maecenas vestibulum dui tortor, quis ornare odio imperdiet a. Sed nunc lacus, sollicitudin eu nulla maximus, condimentum ullamcorper libero. Donec quis lacus ultrices, accumsan purus sed, ornare arcu. Sed suscipit vulputate iaculis.</p>
+</div>
+<div class="section lg med sml" id="sec2">
+<p id="lorem2">Cow Tongue Burger</p>
+<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit quis magna quis dictum. Morbi et euismod est, sit amet placerat nulla. Praesent scelerisque metus eu turpis lacinia tempor. Aenean in vulputate orci. Donec ipsum orci, congue a fringilla at, blandit non eros. Vestibulum ac nunc suscipit, mattis sem ut, auctor erat. Maecenas vestibulum dui tortor, quis ornare odio imperdiet a. Sed nunc lacus, sollicitudin eu nulla maximus, condimentum ullamcorper libero. Donec quis lacus ultrices, accumsan purus sed, ornare arcu. Sed suscipit vulputate iaculis.</p>
+</div>
+<div class="section lg med sml" id="sec3">
+<p id="lorem3">Crunchy Ants</p>
+<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit quis magna quis dictum. Morbi et euismod est, sit amet placerat nulla. Praesent scelerisque metus eu turpis lacinia tempor. Aenean in vulputate orci. Donec ipsum orci, congue a fringilla at, blandit non eros. Vestibulum ac nunc suscipit, mattis sem ut, auctor erat. Maecenas vestibulum dui tortor, quis ornare odio imperdiet a. Sed nunc lacus, sollicitudin eu nulla maximus, condimentum ullamcorper libero. Donec quis lacus ultrices, accumsan purus sed, ornare arcu. Sed suscipit vulputate iaculis.</p>
+</div>
+</body>
+</html>
